@@ -1,2 +1,2 @@
 # easykatze
-Este arquivo README foi atualizado por mim como parte da atividade solicitada.
+Esse arquivo README foi editado por Lc, como foi solicitado na atividade.

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EASYKATZE</title>
+    <link rel="stylesheet" href="easykatze-front/css/style.css" />
+  </head>
+
+  <body>
+    <main class="page">
+      <section class="card" aria-labelledby="login-title">
+        <header class="card__header">
+          <div class="pet-wrapper">
+            <img
+              class="header-image"
+              src="easykatze-front/assets/images/pet-login.png"
+              alt="Gatinho dando boas-vindas"
+            />
+
+            <div class="speech-bubble" id="petSpeech">
+              <span id="petText">Bem-vindo!!</span>
+            </div>
+          </div>
+
+          <h1 id="login-title">Entrar</h1>
+          <p class="muted">Use seu e-mail e senha para acessar.</p>
+        </header>
+
+        <form id="loginForm" class="form" novalidate>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              inputmode="email"
+              autocomplete="email"
+              required
+              placeholder="seuemail@exemplo.com"
+            />
+            <small
+              class="error"
+              data-error-for="email"
+              aria-live="polite"
+            ></small>
+          </div>
+
+          <div class="field">
+            <label for="password">Senha</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              required
+              minlength="6"
+              placeholder="••••••••"
+            />
+            <small
+              class="error"
+              data-error-for="password"
+              aria-live="polite"
+            ></small>
+          </div>
+
+          <div class="actions">
+            <label class="checkbox">
+              <input id="remember" name="remember" type="checkbox" />
+              <span>Manter conectado</span>
+            </label>
+
+            <a class="link" href="#" aria-label="Recuperar senha"
+              >Esqueci minha senha</a
+            >
+          </div>
+
+          <button id="submitBtn" type="submit">Entrar</button>
+
+          <p
+            id="formMessage"
+            class="message"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="easykatze-front/js/main.js" defer></script>
+  </body>
+</html>
